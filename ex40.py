@@ -1,7 +1,9 @@
+from flask import Flask
+app = Flask(__name__)
+
+
 class Song(object):
-
-    #def _init_(self, lyrics):
-
+    @app.route('/')
     def __init__(self, lyrics):
         self.lyrics = lyrics
 
@@ -19,3 +21,6 @@ bulls_on_parade = Song(["Then rally around the family",
 happy_bday.sing_me_a_song()
 
 bulls_on_parade.sing_me_a_song()
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
