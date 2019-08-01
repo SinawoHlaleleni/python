@@ -22,7 +22,7 @@ happy_bday.sing_me_a_song()
 
 bulls_on_parade.sing_me_a_song()
 
-return Song
+return 'Song'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
